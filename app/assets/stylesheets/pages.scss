@@ -1,0 +1,44 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.
+.social-link {
+  height: 35px;
+  width: 35px;
+}
+
+.social-link-block {
+  display: inline-block;
+  float: right;
+  margin-right: 10%;
+}
+
+.user-name {
+  float: right;
+  margin-right: 10%;
+}
+
+.header-block {
+  display: inline-block;
+}
+
+.view-button {
+  background-color: deepskyblue;
+  border-color: blue;
+  color: blue;
+  border-radius: 10%;
+  margin-left: 10%;
+}
+
+.skills-block{
+  margin-left: 10%;
+}
+
+.images-block {
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.portfolio-image {
+  height: 300px;
+  width: 300px;
+}

@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Portfolio</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Portfolio</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,500,700" rel="stylesheet">
 
-  <body>
-    <%= yield %>
-  </body>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<header>
+  <nav class="menu header-block">
+    <ul>
+      <li class="header-block"><%= link_to "Welcome", "/" %></li>
+      <li class="header-block"><%= link_to "Portfolio", "/portfolio" %></li>
+    </ul>
+  </nav>
+  <div class="user-name header-block">
+    <h2>Kodirus Steinmann</h2>
+  </div>
+</header>
+
+<body>
+<%= yield %>
+</body>
+
+<footer>
+  <div class="social-link-block">
+    <a href="#"><img class="social-link" src="https://image.flaticon.com/icons/svg/174/174857.svg"></a>
+    <a href="#"><img class="social-link" src="https://image.flaticon.com/icons/svg/174/174848.svg"></a>
+  </div>
+</footer>
 </html>
